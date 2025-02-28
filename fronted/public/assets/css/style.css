@@ -1,0 +1,180 @@
+/* .nav-item{
+  padding-left: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  
+} */
+
+/* .navbar-nav{
+    padding-left:50px;
+} */
+/* .navbar-brand{
+    padding-left: 60px;
+  
+
+   
+} */
+/* .carousel-caption{
+  padding-bottom: 150px;
+  padding-right: 300px ;
+
+} */
+/* .main_menu{
+  position: fixed;
+  z-index: 9999 !important;
+  width: 100%;
+  box-shadow: 0px 10px 15px rgba(15, 255, 171, 0.05);
+  top: 0;
+} */
+/* .main_menu:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #411240;
+  
+  z-index: -1;
+  opacity: .7;
+} */
+/* #ii{
+  background-Image:linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
+} */
+/* .dropdown:hover .dropdown-menu {
+  transform: scale(1);
+}
+.dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  padding: 8px 20px !important;
+  color: #fff !important;
+  background-color: #fa4c4c;
+  text-transform: capitalize;
+} */
+/* .dropdown .dropdown-menu {
+  transition:  0.2s; */
+  /* overflow: hidden; */
+  /* transform-origin: top center; */
+  /* transform: scale(1, 0);
+  display: block;
+  border: 0px solid;
+  background-color: #fa4c4c;
+  margin-top: 0px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Protest+Revolution&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+ /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+     
+    /* font-family: 'MedievalSharp', cursive; */
+/* font-family: 'Protest Revolution', sans-serif;  */
+
+ /* font-family: "Roboto Condensed", sans-serif; */
+ #welcome{
+  font-size: 50px;
+  word-break: 40px;
+  animation-name: top;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  /* animation-delay: 1s; */
+ font-family: 'Acme', sans-serif; 
+ animation-fill-mode: backwards;
+ }
+#para{
+  animation-name: left;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 1s;
+ font-family: 'Acme', sans-serif; 
+
+
+}
+@keyframes top{
+  from{
+    transform: translateY(-80px);
+  }
+  to{
+    transform: translateY(0px) ;
+  }
+  }
+.carousel-control-next, .carousel-control-prev{
+  opacity: 0.3;
+}
+@keyframes left{
+from{
+  transform: translateX(-500px);
+}
+to{
+  transform: translateX(0px) ;
+}
+}
+#para1{
+  animation-name: left1;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 1s;
+ font-family: 'Acme', sans-serif; 
+
+}
+@keyframes left1{
+from{
+  transform: translateX(-999px);
+}
+to{
+  transform: translateX(0px) ;
+}
+}
+
+
+.nav-link{
+
+  margin-left: 30px;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif; 
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.nav-item :hover {
+  background-color: rgb(64, 64, 244);
+  color: white;
+  /* border-radius: 999px; */
+}
+
+.dropdown-menu:hover{
+  background-color:white ;
+  color: black;
+  border-radius: 0px;
+}
+#lp{
+  padding:3px;
+}
+#io {
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 4px;
+  color: black;
+}
+
+#in {
+  width: 270px;
+  height: 40px;
+  padding-left: 40px;
+
+  border-radius: 10px;
+
+}
+
+#btn {
+  width: 270px;
+  /* margin-top: 20px; */
+
+}
