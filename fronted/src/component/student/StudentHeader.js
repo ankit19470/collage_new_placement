@@ -53,6 +53,11 @@ function StudentHeader(){
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to={"/studentmaster/chat"}>
+                    Chat
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to={"/changepassword"}>
                    ChangePassword
                   </Link>

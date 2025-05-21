@@ -47,6 +47,12 @@ import New from "./component/New";
 import NewLogin from "./component/New";
 import ChangePassword from "./component/ChangePassword";
 import ChangePassCom from "./component/changePassCom";
+import Chat from "./component/ChatComponent";
+import CompanyChat from "./component/CompanyChat";
+import StudentChat from "./component/StudentChat";
+import ChatBot from "react-chatbotify";
+import ChatBots from "./ChatBots";
+import ChatApplication from "./ChatApplication";
 
 
 
@@ -72,6 +78,11 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path='/placed' element={<Placed />} />
+               <Route path="/chat" element={<ChatBots/>}/>
+         
+            {/* <Route path='/chat' element={}/> */}
+          
+
             {/* <Route path='/admin' element={<Admin />} /> */}
             {/* <Route path='/company' element={<Company />} /> */}
     
@@ -117,6 +128,7 @@ function App() {
             <Route path='/companymaster/addjob' element={<Addjobs />} />
             <Route path='/companymaster/managejob' element={<ManageJobs />} />
             <Route path='/companymaster/updatejob/:id' element={<UpdateJob />} />
+            <Route path="/companymaster/chat" element={<ChatApplication/>}/>
 
 
             {/* <Route path='/companymaster/viewapplication' element={<ViewApplicant />} /> */}
@@ -127,8 +139,17 @@ function App() {
             <Route path='/studentmaster/home' element={<StudentHome />} />
             <Route path='/studentmaster/viewjob' element={<ViewJob />} />
             <Route path='/studentmaster/viewapplication' element={<ViewApplication />} />
+             <Route path="/studentmaster/chat" element={<ChatApplication/>}/>
           </Route>
+
+
+          <Route path="/companychat" element={<CompanyChat/>}/>
+          <Route path="/studentchat" element={<StudentChat/>}/>
+
           <Route path='/new' element={<NewLogin />} ></Route>
+             {/* <Route path="/chat" element={<ChatBots/>}></Route> */}
+          {/* <Route path="/chat" element={<ChatBot/>}></Route> */}
+
 
 
 
@@ -136,7 +157,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-
+{/* <Chat/> */}
       <ToastContainer
         position="bottom-left"
         autoClose={5000}

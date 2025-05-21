@@ -108,7 +108,7 @@ jobgetsingle = (req, res) => {
                         status: 404,
                         success: false,
                         messeage: "Data not loaded",
-                        data: jobData
+                        // data: jobData
                     })
                 }
                 else {

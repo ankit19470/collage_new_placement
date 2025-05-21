@@ -1,11 +1,10 @@
 import axios from "axios";
 // import * as qs from "qs"
-import * as qs from "qs";
+import * as qs from "qs"
 
 export const BASE_URL = "http://localhost:1000/"
 
 class ApiServices {
-
         // Department
         getToken() {
             let obj = {

@@ -73,9 +73,6 @@ function AddCourse() {
                             <div className="col-2 text-end">Course name</div>
                             <div className="col-6"><input value={coursename} onChange={changeName} className="form-control"></input></div>
                             <div className="col-1"></div>
-
-
-
                         </div>
                         <div className="row py-3">
                             <div className="col-1 text-end"></div>
@@ -83,9 +80,6 @@ function AddCourse() {
                             <div className="col-2 text-end">Course Code</div>
                             <div className="col-6"><input value={coursecode} onChange={changeCourse} className="form-control"></input></div>
                             <div className="col-1"></div>
-
-
-
                         </div>
                         <div className="row">
                             <div className="col-1 text-end"></div>
@@ -100,13 +94,7 @@ function AddCourse() {
                                 }
                                 </select></div>
                             <div className="col-1"></div>
-
-
-
                         </div>
-
-
-
                         <div className="row py-3">
                             <div className="col-12 text-center"><button className="btn btn-primary">Submit</button></div>
 

@@ -31,6 +31,7 @@ stuAdd = (req, res) => {
         })
     }
     else {
+        // email
         User.findOne({ email: req.body.email })
             .then(studentloginData => {
                 console.log(studentloginData);
@@ -41,6 +42,7 @@ stuAdd = (req, res) => {
                     loginObj.userType = 2
                     loginObj.password = bcrypt.hashSync(req.body.password, saltround)
                     loginObj.save()
+                    // insert 
                         .then(saveRes => {
                             let studentObj = new Student()
                             studentObj.userId = saveRes._id

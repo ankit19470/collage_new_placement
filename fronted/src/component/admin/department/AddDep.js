@@ -3,10 +3,14 @@ import { useState } from "react"
 import { toast } from "react-toastify"
 import ApiServices from "../../ApiServices"
 import { ClipLoader } from "react-spinners"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 function AddDep() {
     const [depName, setDep] = useState("")
-    var [loading, setLoader] = useState(false)
+    const [loading, setLoader] = useState(false)
+    const token=sessionStorage.getItem('token')
+    if(!token){
+        return <Navigate to={'/admin'}/>
+    }
     const changeDepartment = ((event) => {
         setDep(event.target.value)
     })
@@ -19,8 +23,11 @@ function AddDep() {
         let data = {
             departmentName: depName
         }
-        //  axios.post("http://localhost:1000/api/add/department",data)
-        ApiServices.addDepartment(data)
+        let obj={
+            Authorization:localStorage.getItem('token')
+        }
+         axios.post("http://localhost:1000/api/add/department",data,{headers:obj})
+        // ApiServices.addDepartment(data)
             .then((res) => {
                 if (res.data.success == true) {
                     toast.success(res.data.message)

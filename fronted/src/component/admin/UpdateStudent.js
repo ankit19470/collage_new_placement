@@ -20,7 +20,7 @@ function UpdateStudent() {
     const [courseId, setcourse] = useState("")
     const [courseIdData, setcourseData] = useState([])
     const changeName = ((e) => {
-        setName(e.target.value)
+        setName(e.target.value) 
     })
     // const changeEmail = ((e) => {
     //     setEmail(e.target.value)

@@ -9,14 +9,17 @@
     "axios": "^1.6.8",
     "model": "^6.0.1",
     "react": "^18.2.0",
+    "react-chatbotify": "^2.0.0-beta.33",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.5",
+    "react-icons": "^5.5.0",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "react-toastify": "^10.0.5",
+    "socket.io-client": "^4.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

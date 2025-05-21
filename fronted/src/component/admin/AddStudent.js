@@ -95,7 +95,7 @@ function AddStudent() {
 
                         .then((res) => {
                             if (res.data.success == true) {
-                                sessionStorage.setItem("userId", res.data._id)
+                                sessionStorage.setItem("userId", res.data.data._id)
                                 sessionStorage.setItem("token", res.data.token)
                                 localStorage.setItem("token", res.data.token)
                                 nav('/adminmaster/managestudent')

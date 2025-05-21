@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
 import ApiServices from "../../ApiServices"
 import { Link } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 function Addjobs() {
     const [title, setTitle] = useState("")
     const [des, setdes] = useState("")
@@ -10,7 +11,8 @@ function Addjobs() {
     const [exp, setexp] = useState("")
     // const [companyId, setcom] = useState("")
     const [companyIdData, setcomData] = useState([])
-
+    const token=sessionStorage.getItem('token')
+ 
 
     // const changeCom = ((event) => {
     //     setcom(event.target.value)
@@ -38,6 +40,9 @@ useEffect(()=>{
 
     })
 },[])
+if(!token){
+    return <Navigate to={'/student'}/>
+}
     const handleForm = ((event) => {
         event.preventDefault();
         const userData=JSON.parse(sessionStorage.getItem("userData"))
@@ -48,8 +53,11 @@ useEffect(()=>{
             Experience: exp,
             companyId:userData.companyId
         }
-        // axios.post("http://localhost:1000/api/add/jobpost", data)
-        ApiServices.addJob(data)
+        let obj={
+            Authorization:localStorage.getItem('token')
+        }
+        axios.post("http://localhost:1000/api/add/jobpost", data,{headers:obj})
+        // ApiServices.addJob(data)
             .then((res) => {
              if(res.data.success==true){
                 toast.success(res.data.message)

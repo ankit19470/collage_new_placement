@@ -13,8 +13,6 @@ function ManageCompany() {
             .then((res) => {
                 console.log(res)
                 setData(res.data.data)
-
-
             })
             .catch((err) => {
                 console.log(err)

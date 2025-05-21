@@ -14,8 +14,7 @@ function SingleJob(){
         axios.post("http://localhost:1000/api/getsingle/jobpost",data)
         .then((res)=>{
             console.log(res.data.data)
-            setData(res.data.data)
-            
+            setData(res.data.data)  
         })
     },[])
     return(

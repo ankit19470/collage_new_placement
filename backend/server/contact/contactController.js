@@ -18,7 +18,6 @@ add = (req, res) => {
             success: false,
             message: "validation errors",
             error: validationerror
-
         })
     }
     else {

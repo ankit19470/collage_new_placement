@@ -97,7 +97,7 @@ function Admin() {
               <span className="fs-3">
                 <i className="bi bi-key" id="io" />
               </span>
-              <input  id="in" placeholder="Password" {...register("password", { required: true,maxLength:10 })}  /> <br />  
+              <input type="password" id="in" placeholder="Password" {...register("password", { required: true,maxLength:10 })}  /> <br />  
                  {errors.password && errors.password.type == "required" ? <span className="text-danger">This is required</span> : ""}
               {errors.password && errors.password.type == "maxLength" ? <span className="text-danger">Length must be less than 10</span> : ""} <br />
               <button id="btn" className="btn btn-primary btn-lg my-4" style={{borderRadius:"999px"}}>

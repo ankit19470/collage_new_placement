@@ -59,7 +59,10 @@ const applicationstorage = multer.diskStorage({
 })
 const applicationupload=multer({ storage: applicationstorage})
 
-
+router.post("/messages", (req, res) => {
+  console.log("Received message:", req.body);
+  res.status(200).json({ message: "Message received successfully" });
+});
 
 // router.use(require("../config/middleware"))
 

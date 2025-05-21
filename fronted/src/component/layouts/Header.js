@@ -42,6 +42,11 @@ function Header(){
               Home
             </Link>
           </li>
+          {/* <li className="nav-item">
+            <Link className="nav-link" to={"/chat"}>
+              Chat
+            </Link>
+          </li> */}
           <li className="nav-item">
             <Link className="nav-link" to={"/about"}>
               About
@@ -62,11 +67,11 @@ function Header(){
               Contact
             </Link>
           </li>
-          {/* <li className="nav-item">
-            <Link className="nav-link" to={"/admin"}>
-              Admin
+          <li className="nav-item">
+            <Link className="nav-link" to={"/chat"}>
+              ChatBot
             </Link>
-          </li> */}
+          </li>
                   <li class="nav-item dropdown">
                   <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Login

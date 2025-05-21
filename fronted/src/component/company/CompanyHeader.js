@@ -53,6 +53,12 @@ return(
 
               </ul>
             </li>
+
+                <li className="nav-item">
+            <Link className="nav-link" to={"/companymaster/chat"}>
+                Chat
+              </Link>
+            </li>
             <li className="nav-item">
             <Link className="nav-link" to={"/changepasswords"}>
                 Change Password
